@@ -44,17 +44,19 @@ public class ParameterTest {
         rectAngle.calcRound();
     }
 
-    public void testVariableLengthArrayParameter(String name, String hobby) {
+    public void testVariableLengthArrayParameter(String name, String...hobby) {
 
         System.out.println("이름 : " + name);
-        System.out.println("취미의 갯수 : " + hobby.length());
+        System.out.println("취미의 갯수 : " + hobby.length);
         System.out.println("취미 : ");
-        for(int i =0; i < hobby.length();i++) {
+        for(int i =0; i < hobby.length;i++) {
             System.out.println(hobby[i] + " ");
         }
         System.out.println();
 
     }
+
+//    ... => 가변인자
 
 
 

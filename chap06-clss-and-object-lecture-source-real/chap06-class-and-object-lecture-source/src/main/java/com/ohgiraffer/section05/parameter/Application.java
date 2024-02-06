@@ -1,5 +1,7 @@
 package com.ohgiraffer.section05.parameter;
 
+import java.util.Scanner;
+
 public class Application {
 
     public static void main(String[] args) {
@@ -14,7 +16,8 @@ public class Application {
         * 5. 가변인자
         * */
 
-        ParameterTest pt = new ParameterTest();
+        ParameterTest pt = new ParameterTest();  // pt =>
+        Scanner sc = new Scanner(System.in);   // sc(일종의 변수명) = Scanner 클래스로 가도록 경로를 저장해주겠다 = 호출해주겠다. (sc : 호출자)
 
         /* 목차 1. 기본자료형을 매개변수로 전달 받는 메소드 호출 확인 */
         /* 기본자료형 8가지 모두 가능하다. */
@@ -45,12 +48,14 @@ public class Application {
         r1.calcRound();
 
         /* 목차 5. 가변인자 */
-        pt.testVariableLengthArrayParameter();
+//        pt.testVariableLengthArrayParameter();
         pt.testVariableLengthArrayParameter("홍길동");  // 가변인자는 전달하지 않아도 됨.
         pt.testVariableLengthArrayParameter("유관순", "볼링");
         pt.testVariableLengthArrayParameter("이순신", "볼링", "축구", "당구");
         pt.testVariableLengthArrayParameter("신사임당", new String[] {"테니스", "서예", "떡썰기"});
 
+
+       r1.getWidth();
 
     }
 

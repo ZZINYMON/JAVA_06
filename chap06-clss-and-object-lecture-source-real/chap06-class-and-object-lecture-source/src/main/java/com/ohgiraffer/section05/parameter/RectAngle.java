@@ -2,28 +2,31 @@ package com.ohgiraffer.section05.parameter;
 
 public class RectAngle {
 
-    public double width;
+    private double width;
     private double height;
+
     public RectAngle(double width, double height) {
         this.width = width;
         this.height = height;
-
-
     }
 
     public void setWidth(double width) {
         this.width = width;
     }
+
     public void setHeight(double height) {
         this.height = height;
     }
 
 
-    public void getWidth(double width) {
-        return this.width = width;
+    public double getWidth() {
+
+        return this.width;
     }
-    public void getHeight(double height) {
-        return this.height = height;
+
+    public double getHeight() {
+
+        return this.height;
     }
 
     public void calcArea() {
@@ -41,7 +44,6 @@ public class RectAngle {
         System.out.println("이 사각형의 둘레는 " + round + "입니다.");
 
     }
-
 
 
 }

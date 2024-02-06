@@ -12,7 +12,7 @@ public class UserDTO {
     * (명시하지 않고 추후 매개변수 있는 생성자를 추가할 시 에러 발생 가능성이 있기 때문이다.)
     *  */
 
-    public UserDTO() {
+    public UserDTO() { }
 
     /* 매개변수가 있는 생성자는 선택 사항이다.
     * 필요에 따라 만들지만 일반적으로 가장 많이 사용되는생성자는 모든 필드를 초기화하는 생성자이다.
@@ -47,25 +47,24 @@ public class UserDTO {
 
 
 
-        public void getId(String id) {
-            return.id = id;
+        public String getId() {
+            return id;
         }
 
-        public void getPw(String pwd) {
-            return.pwd = pwd;
+        public String getPwd() {
+            return pwd;
         }
 
-        public void getName(String name) {
-            return.name = name;
-
-
+        public String getName () {
+            return name;
         }
-        public void getEnrollDate(java.util.Date enrollDate) {
-            return.enrollDate = enrollDate;
+
+        public java.util.Date getEnrollDate() {
+            return enrollDate;
         }
 
         public String getInformation() {
-         return; "UserDTO [id=" + this.id + ",pwd=" + this.pwd + ", name=" + this.name + ", enrollDate=" + enrollDate
+         return "UserDTO [id=" + this.id + ",pwd=" + this.pwd + ", name=" + this.name + ", enrollDate=" + this.enrollDate + "]";
 
 
 

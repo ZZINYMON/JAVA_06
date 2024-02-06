@@ -28,7 +28,7 @@ public class Application {
 
         System.out.println(member.getNumber());
         System.out.println(member.getName());
-        System.out.println(member.getage());
+        System.out.println(member.getAge());
         System.out.println(member.getGender());
         System.out.println(member.getHeight());
         System.out.println(member.getWeight());

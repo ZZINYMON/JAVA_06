@@ -23,22 +23,19 @@ public class OverLoadingTest {
     *  public void method(int num) {} 이라는 메소드의 메소드명과 선언부 부분을 시그니처라고 부른다.
     *  method(int num) 이 부분이 시그니처이다.
     *  메소드의 시그니처가 달라야 하기 때문에 접근제한자나 반환형은 오버로딩 성립요건에 해당하지 않는다.
-    *
-    * */
+    *  */
 
-    public void test() {
+    public void test() { }
 
-    }
+//    1. public  void test() {}
 
-    // public  void test() {}
+//    2. private void test() {}  // 접근제한자가 public -> private,
 
-    // private void test() {}
-
-    public int test() {
-        return 0;
-    }
-    public void  test(int num) {}  // 파라미터 선언부는 메소드 시그니처에 해당한다. 오버로딩 성립요건에 해당
-   //  public void test(int num2) {}  // 매개변수(int num2)의 이름은 메소드 시그니처에 영향을 주지 않는다.
+//    3. public int test() {
+//        return 0;
+//    }
+    public void  test(int num) {}      // 파라미터 선언부는 메소드 시그니처에 해당한다. 오버로딩 성립요건에 해당
+   //  public void test(int num2) {}   // 매개변수(int num2)의 이름은 메소드 시그니처에 영향을 주지 않는다.
 
     public void test(int num1, int num2) {}
 
@@ -47,3 +44,8 @@ public class OverLoadingTest {
     public void test(String name, int num) {}
 
 }
+
+
+// 결론.  1. 메소드의 시그니처가 다르면 다른 메소드로 인식(시그니처 => 메소드 이름, 매개변수)
+//       2. 동일한 이름의 메소드로 다양한 종류의 선언부(매개변수의 타입, 갯수, 순서)를 다르게 작성해 한 클래스 내에 같은 이름의 메소드를 여러 개 작성할 수 있다.
+//       3. 메소드의 시그니처에 영향을 미치는 것은 >> 메소드 이름(위에서 test),매개변수(test뒤 ()안에 들어가는 것)
