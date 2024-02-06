@@ -14,6 +14,4 @@ public class Car {
         System.out.println(modelName +"이(가) 최고시속 " + maxSpeed + "km/h로 달려갑니다.");
 
     }
-
-
 }

@@ -26,6 +26,7 @@ public class Application {
         car5.driveMaxSpeed();
 
         Car[] carArray = new Car[5];
+
         carArray[0] = new Car("페라리", 300);
         carArray[1] = new Car("람보르기니", 350);
         carArray[2] = new Car("롤스로이스", 250);
@@ -42,7 +43,6 @@ public class Application {
                 new Car("롤스로이스", 250),
                 new Car("부가티베이론", 400),
                 new Car("포터", 500),
-
     };
 
         for (Car c : carArray2) {
